@@ -11,12 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class ClientePetApplication {
 	@GetMapping
-	public String getNomeTeste() {
+	public String getHomeTeste() {
 		return "Cliente Pet - API";
 	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(ClientePetApplication.class, args);
 	}
-
 }
