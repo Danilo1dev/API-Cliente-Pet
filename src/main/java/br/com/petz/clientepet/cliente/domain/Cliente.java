@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 public class Cliente {
 	@Id
 	private UUID idCliente;
-		
+
 	@NotBlank
 	private String nomeCompleto;
 	@NotBlank
