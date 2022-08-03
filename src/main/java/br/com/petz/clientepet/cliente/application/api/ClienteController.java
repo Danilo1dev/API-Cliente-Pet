@@ -39,4 +39,11 @@ public class ClienteController implements ClienteAPI {
 		log.info("[finaliza] ClienteController - getClienteAtravesID");
 		return clienteDetalhado;
 	}
+
+	@Override
+	public void deletaClienteAtravesId(UUID idCliente) {
+		log.info("[inicia] ClienteController - deletaClienteAtravesID");
+		log.info("[idCliente] {}", idCliente);
+		log.info("[finaliza] ClienteController - deletaClienteAtravesID");
+	}
 }
