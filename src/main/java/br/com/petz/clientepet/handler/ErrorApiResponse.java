@@ -1,7 +1,6 @@
 package br.com.petz.clientepet.handler;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

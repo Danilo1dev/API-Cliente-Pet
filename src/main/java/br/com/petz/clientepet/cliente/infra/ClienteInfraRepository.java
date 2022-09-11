@@ -2,10 +2,8 @@ package br.com.petz.clientepet.cliente.infra;
 
 import java.util.List;
 import java.util.UUID;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
-
 import br.com.petz.clientepet.cliente.application.repository.ClienteRepository;
 import br.com.petz.clientepet.cliente.domain.Cliente;
 import br.com.petz.clientepet.handler.APIException;
