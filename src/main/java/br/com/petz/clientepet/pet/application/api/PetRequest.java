@@ -1,7 +1,6 @@
 package br.com.petz.clientepet.pet.application.api;
 
 import java.time.LocalDate;
-import java.util.UUID;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotBlank;
@@ -13,7 +12,6 @@ import lombok.Value;
 
 @Value
 public class PetRequest {
-	private UUID idPet;
 	@NotBlank
 	private String nomePet;
 	@Enumerated(EnumType.STRING)
