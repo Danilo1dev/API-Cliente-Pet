@@ -1,6 +1,5 @@
 package br.com.petz.clientepet.pet.domain;
 
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -14,6 +13,7 @@ import javax.persistence.Id;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import br.com.petz.clientepet.pet.application.api.PetAlteracaoRequest;
 import br.com.petz.clientepet.pet.application.api.PetRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -66,5 +66,19 @@ public class Pet {
 		this.rga = petRequest.getRga();
 		this.peso = petRequest.getPeso();
 		this.dataHoraDoCadastro = LocalDateTime.now();
+	}
+
+	public void altera(@Valid PetAlteracaoRequest petAlteracaoRequest) {
+		this.nomePet = petAlteracaoRequest.getNomePet();
+		this.porte = petAlteracaoRequest.getPorte();
+		this.tipo = petAlteracaoRequest.getTipo();
+		this.microchip = petAlteracaoRequest.getMicrochip();
+		this.raca = petAlteracaoRequest.getRaca();
+		this.sexo = petAlteracaoRequest.getSexo();
+		this.pelagemCor = petAlteracaoRequest.getPelagemCor();
+		this.dataNascimento = petAlteracaoRequest.getDataNascimento();
+		this.rga = petAlteracaoRequest.getRga();
+		this.peso = petAlteracaoRequest.getPeso();
+		this.dataHoraDaUltimaAlteracao = LocalDateTime.now();
 	}
 }
