@@ -30,4 +30,11 @@ public class PetInfraRepository implements PetRepository {
 		log.info("[finaliza] PetInfraRepository - buscaPetDoClienteComId");
 		return pet;
 	}
+
+	@Override
+	public Pet buscaPetPeloId(UUID idPet) {
+		log.info("[inicia] PetInfraRepository - buscaPetPeloId");
+		log.info("[finaliza] PetInfraRepository - buscaPetPeloId");
+		return null;
+	}
 }
