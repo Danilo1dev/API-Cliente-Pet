@@ -2,7 +2,6 @@ package br.com.petz.clientepet.pet.application.api;
 
 import java.time.LocalDate;
 import java.util.UUID;
-
 import br.com.petz.clientepet.pet.domain.Pet;
 import br.com.petz.clientepet.pet.domain.Porte;
 import br.com.petz.clientepet.pet.domain.SexoPet;
