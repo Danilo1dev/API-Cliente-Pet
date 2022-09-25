@@ -15,6 +15,7 @@
 	<description>Esse projeto mantem as entidades Cliente e Pet</description>
 	<properties>
 		<java.version>11</java.version>
+		<spring-doc.version>1.6.9</spring-doc.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -50,6 +51,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${spring-doc.version}</version>
 		</dependency>
 	</dependencies>
 
