@@ -4,9 +4,13 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 import br.com.petz.clientepet.cliente.domain.Cliente;
 import br.com.petz.clientepet.cliente.domain.Sexo;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Value;
 
 @Value
+@Builder
+@AllArgsConstructor
 public class ClienteDetalhadoResponse {
 
 	private UUID idCliente;
