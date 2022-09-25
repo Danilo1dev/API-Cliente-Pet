@@ -29,6 +29,7 @@ public class Pet {
 	private UUID idClienteTutor;
 	@NotBlank
 	private String nomePet;
+	
 	@Enumerated(EnumType.STRING)
 	private Porte porte;
 	@NotNull

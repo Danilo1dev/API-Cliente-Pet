@@ -1,5 +1,9 @@
 package br.com.petz.clientepet.pet.application.api;
 
-public class PetResponde {
+import java.util.UUID;
+import lombok.Value;
 
+@Value
+public class PetResponde {
+	private UUID idPet;
 }
