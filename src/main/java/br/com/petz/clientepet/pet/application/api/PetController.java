@@ -14,10 +14,10 @@ public class PetController implements PetAPI {
 	private final PetService petService;
 
 	@Override
-	public PetResponse postPet(UUID idCliente, @Valid PetRequest petRquest) {
+	public PetResponse postPet(UUID idCliente, @Valid PetRequest petRequest) {
 		log.info("[inicia] PetController - postPet");
-		log.info("[idClient] {}", idCliente);
-		PetResponse pet = petService.criaPet(idCliente, petRquest); 
+		log.info("[idCliente] {}", idCliente);
+		PetResponse pet = petService.criaPet(idCliente, petRequest);
 		log.info("[finaliza] PetController - postPet");
 		return pet;
 	}

@@ -1,8 +1,6 @@
 package br.com.petz.clientepet.pet.application.api;
 
 import java.time.LocalDate;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import br.com.petz.clientepet.pet.domain.Porte;
@@ -14,7 +12,6 @@ import lombok.Value;
 public class PetRequest {
 	@NotBlank
 	private String nomePet;
-	@Enumerated(EnumType.STRING)
 	private Porte porte;
 	@NotNull
 	private TipoPet tipo;
