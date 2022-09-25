@@ -2,6 +2,10 @@ server:
  servlet:
     context-path: /cliente-pet/api
     
+springdoc:
+  swagger-ui:
+    path: /public/swagger    
+    
 spring:
   datasource:
     url: jdbc:h2:mem:demodb
